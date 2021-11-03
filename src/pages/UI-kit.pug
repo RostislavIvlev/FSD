@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+      .wrapper
+        header.UI-header
+          a(href="./index.html")
+            img(src="/assets/images/logo.svg", alt="") 
+        .UI-container
+          .UI-content
+            .UI-content__col
+              each color in ["black", "black75", "black50", "black25", "black05", "purple", "green"]
+                .UI-content__color(class="UI-content__color_" + color)
+            .UI-content__col
+              each hex, title in { "Dark Shade 100%" : "#1F2041", "Dark Shade 75%" : "#1F2041", "Dark Shade 50%" : "#1F2041", "Dark Shade 25%" : "#1F2041", "Dark Shade 5%" : "#1F2041", "Purple" : "#BC9CFF", "Green" : "#6FCF97" }
+                span.UI-content__color-title= title
+                span.UI-content__hex= hex
+
+          .UI-content
+            .UI-content__col
+              each subtitle, title in {"H1" : "This one is the sub-section or widget title", "H2" : "Next one is the item title inside widgets", "H3" : "THIS IS A LABEL OR CTA TEXT", "Body" : "This is the body text which is used for most of the design, like paragraphs, lists, etc."}
+                .UI-content__row
+                  .UI-content__title(class="UI-content__title_" + title)= title
+                  .UI-content__subtitle(class="UI-content__subtitle_" + title)= subtitle

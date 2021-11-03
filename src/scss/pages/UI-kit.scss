@@ -1,0 +1,137 @@
+.UI-header {
+    padding: 30px;
+    margin-bottom: 33px;
+}
+
+.UI-container {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 150px;
+    padding-right: 158px;
+}
+
+.UI-content {
+    display: flex;
+    color: $black;
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__color {
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+        margin-right: 40px;
+
+        &_black {
+            background-color: $black;
+        }
+
+        &_black75 {
+            background-color: $black75;
+        }
+
+        &_black50 {
+            background-color: $black50;
+        }
+
+        &_black25 {
+            background-color: $black25;
+        }
+
+        &_black05 {
+            background-color: $black05;
+        }
+
+        &_purple {
+            background-color: $purple;
+        }
+
+        &_green {
+            background-color: $green;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__color-title {
+        font-family: $montserrat700;
+        font-size: 19px;
+        line-height: 28px;
+
+        &:first-child {
+            margin-top: 6px;
+        }
+    }
+
+    &__hex {
+        font-family: $montserrat400;
+        font-size: 19px;
+        line-height: 28px;
+        margin-bottom: 34px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__row {
+        display: flex;
+    }
+
+    &__title {
+        color: $black25;
+        font-family: $montserrat400;
+
+        &_H1 {
+            font-size: 24px;
+            margin-right: 30px;
+        }
+
+        &_H2 {
+            font-size: 19px;
+            margin-right: 30px;
+        }
+
+        &_H3 {
+            font-size: 12px;
+            margin-right: 39px;
+        }
+
+        &_Body {
+            font-size: 14px;
+            margin-right: 20px;
+        }
+    }
+
+    &__subtitle {
+        font-family: $montserrat700;
+        margin-bottom: 50px;
+
+        &_H1 {
+            font-size: 24px;
+            width: 369px;
+        }
+
+        &_H2 {
+            font-size: 19px;
+            width: 312px;
+        }
+
+        &_H3 {
+            font-size: 12px;
+        }
+
+        &_Body {
+            font-size: 14px;
+            color: $black75;
+            width: 300px;
+            font-family: $montserrat400;
+        }
+    }
+}
