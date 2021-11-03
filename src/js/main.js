@@ -1,3 +1,4 @@
 import '../scss/main.scss';
 
-import '../index.pug'
+import '../pages/index.pug';
+import '../pages/index2.pug';
